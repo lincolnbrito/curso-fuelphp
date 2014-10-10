@@ -17,6 +17,10 @@ class Controller_Categorias extends Controller
 	{
 		echo 'oi, eu sou o método listar do controller categorias';
 	}
+	public function action_listar_rest()
+	{
+		echo 'Usando API hein?';
+	}
 
 	public function action_visualizar($ano = null, $texto = null)
 	{
@@ -29,5 +33,5 @@ class Controller_Categorias extends Controller
 		echo $this->param('dia') ."-". $this->param('mes') ."-". $this->param('ano');
 		//echo "VISUALIZANDO: $ano - $texto";
 	}
-	
+
 }
