@@ -10,7 +10,7 @@ class Controller_Categorias extends Controller
 
 		$data['categoria'] = $categoria;
 
-		return View::forge('categorias/index', $data);
+		return View::forge('categorias/index', $data, false);
 	}
 
 	public function action_listar()
