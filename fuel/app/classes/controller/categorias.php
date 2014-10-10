@@ -1,9 +1,16 @@
 <?php
+
+use Model\Categoria;
+
 class Controller_Categorias extends Controller
 {
 	public function action_index()
 	{
-		echo 'oi, eu sou a index do controller categorias';
+		$categoria = new Categoria('Eletrônicos');
+
+		$data['categoria'] = $categoria;
+
+		return View::forge('categorias/index', $data);
 	}
 
 	public function action_listar()
