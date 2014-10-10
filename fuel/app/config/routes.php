@@ -7,4 +7,6 @@ return array(
 	
 	'celulares-com-tela-retina' => 'categorias/visualizar',
 	'(\d{4})/consulta/(:any)' => 'categorias/visualizar/$1/$2',
+	'categoria/:dia/:mes/:ano' => 'categorias/visualizar_params',
+	'painel/dashboard' => array('categorias/listar','name'=>'painel')
 );

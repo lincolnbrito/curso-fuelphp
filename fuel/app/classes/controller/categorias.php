@@ -22,4 +22,12 @@ class Controller_Categorias extends Controller
 	{
 		echo "VISUALIZANDO: $ano - $texto";
 	}
+
+	public function action_visualizar_params()
+	{
+		print_r($this->params());
+		echo $this->param('dia') ."-". $this->param('mes') ."-". $this->param('ano');
+		//echo "VISUALIZANDO: $ano - $texto";
+	}
+	
 }

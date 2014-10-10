@@ -15,6 +15,7 @@
 	<div class="container">
 		<div class="row">
 			<?php echo $categoria->getNome(); ?>
+			<?php echo Html::anchor(Router::get('painel'),'Painel de controle'); ?>
 		</div>
 		<hr/>
 		<footer>
