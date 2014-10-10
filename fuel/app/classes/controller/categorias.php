@@ -17,4 +17,9 @@ class Controller_Categorias extends Controller
 	{
 		echo 'oi, eu sou o método listar do controller categorias';
 	}
+
+	public function action_visualizar($ano = null, $texto = null)
+	{
+		echo "VISUALIZANDO: $ano - $texto";
+	}
 }
