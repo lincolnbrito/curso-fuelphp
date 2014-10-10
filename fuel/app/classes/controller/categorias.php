@@ -6,11 +6,11 @@ class Controller_Categorias extends Controller
 {
 	public function action_index()
 	{
-		$categoria = new Categoria('Eletrônicos');
+		$categoria = Categoria::forge(array('nome'=>'Lincoln', 'sobrenome'=>'Brito'));
 
 		$data['categoria'] = $categoria;
 
-		return View::forge('categorias/index', $data, false);
+		return View::forge('categorias/index', $data);
 	}
 
 	public function action_listar()

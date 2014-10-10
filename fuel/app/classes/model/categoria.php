@@ -1,17 +1,15 @@
 <?php
 namespace Model;
 
-class Categoria
+class Categoria extends \Orm\Model
 {
-	private $nome;
-
-	public function __construct($nome)
-	{
-		$this->nome = $nome;
-	}
+	public static $_properties = array(
+		'nome',
+		'sobrenome'
+	);
 
 	public function getNome()
 	{
-		return $this->nome;
+		return $this->nome.' '.$this->sobrenome;
 	}
 }
